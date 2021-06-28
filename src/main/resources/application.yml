@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-boot-executable
+
+# Profiles
+---
+spring:
+  config:
+    activate:
+      on-profile: profile-1
+server:
+  port: 8000
