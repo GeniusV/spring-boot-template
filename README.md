@@ -11,14 +11,21 @@ This is a template project to create application quickly, including:
 Check `pom.xml` to change version.
 
 Others:
+
 - Already configured annotation processors:
-    - `spring-boot-configuration-processor`: for application config file autocomplete
-    - `mapstruct-processor`: for mapstruct
-    - `lombok`: for lombok
+  - `spring-boot-configuration-processor`: for application config file autocomplete
+  - `mapstruct-processor`: for mapstruct
+  - `lombok`: for lombok
 - Javadoc plugin on `package` stage
 - Spring boot plugin to package executable jars.
 
-## Package jar executable
+## Install
+
+```bash
+mvn clean install -DskipTests 
+```
+
+## Spring Boot jar Executable
 
 ``` bash
 mvn clean install spring-boot:repackage -Dmaven.test.skip=true
@@ -26,7 +33,7 @@ mvn clean install spring-boot:repackage -Dmaven.test.skip=true
 
 ## Test
 
-In this template, there are two type of test, unit test and integration test.
+There are two type of test, unit test and integration test.
 
 - Unit test must not reply on another external service, such as a db, redis, etc. Use mock instead. Unit test class
   should end with `Test` suffix (like `ApplicationTest`).
