@@ -28,6 +28,12 @@ mvn clean install -DskipTests
 ## Spring Boot jar Executable
 
 ``` bash
+mvn clean package -DskipTests 
+```
+
+Or
+
+``` bash
 mvn clean install spring-boot:repackage -Dmaven.test.skip=true
 ```
 
@@ -50,9 +56,9 @@ In Intellij IDEA, unit tests and integration tests can be configured separately.
 
 - Unit test pattern: `^(?!.*IntegrationTest.*).*$`
 - Integration test pattern: `.*IntegrationTest.*$`
+- All tests pattern: `.*Test.*$`
 
-Note, in above configuration, unit tests will not be trigger when run integration tests. If you want to run integration
-tests and unit tests together like maven, just run all tests.
+Note, in above configuration, unit tests will not be triggered when running integration tests. 
 
 
 
