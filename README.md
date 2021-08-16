@@ -41,8 +41,8 @@ In maven pom file, there are two profile: `unit-test` and `integration-test`
 
 In Intellij IDEA, unit tests and integration tests can be configured separately.
 
-- Unit test pattern: `^(.*IntegrationTest)`
-- Integration test pattern: `.*IntegrationTest`
+- Unit test pattern: `^(?!.*IntegrationTest.*).*$`
+- Integration test pattern: `.*IntegrationTest.*$`
 
 Note, in above configuration, unit tests will not be trigger when run integration tests. If you want to run integration
 tests and unit tests together like maven, just run all tests.
