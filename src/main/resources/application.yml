@@ -2,6 +2,11 @@ spring:
   application:
     name: spring-boot-executable
 
+logging:
+  level:
+    root: info
+    com.geniusver: info
+
 # Profiles
 ---
 spring:
