@@ -14,9 +14,13 @@
         <revision>1.0.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-        <spring.boot-version>2.4.3</spring.boot-version>
-        <spring.cloud-version>2020.0.2</spring.cloud-version>
+
+        <!-- https://docs.spring.io/spring-cloud/docs/current/reference/html/ -->
+        <spring.cloud-version>2020.0.3</spring.cloud-version>
+        <spring.boot-version>2.4.6</spring.boot-version>
         <spring.alibaba-veriosn>2021.1</spring.alibaba-veriosn>
+
+        <!-- https://mapstruct.org/documentation/stable/reference/html/#lombok/ -->
         <mapstruct.version>1.4.2.Final</mapstruct.version>
         <lombok.version>1.18.18</lombok.version>
     </properties>
