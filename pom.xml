@@ -6,12 +6,11 @@
 
     <groupId>com.geniusver</groupId>
     <artifactId>spring-boot-template</artifactId>
-    <version>${revision}</version>
+    <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
         <java.version>11</java.version>
-        <revision>1.0.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
 
