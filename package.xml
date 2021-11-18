@@ -14,11 +14,18 @@
                 <include>application.yml</include>
             </includes>
         </fileSet>
+        <fileSet>
+            <outputDirectory>/</outputDirectory>
+            <directory>./</directory>
+            <includes>
+                <include>README.md</include>
+            </includes>
+        </fileSet>
     </fileSets>
 
     <files>
         <file>
-            <source>target/${artifactId}-${revision}.jar</source>
+            <source>target/${artifactId}-${project.version}.jar</source>
             <outputDirectory>/</outputDirectory>
         </file>
     </files>
