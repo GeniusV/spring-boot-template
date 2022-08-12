@@ -10,16 +10,19 @@ This is a template project to create application quickly, including:
 
 Check `pom.xml` to change version.
 
-Others:
+Other features:
+
 - Already configured annotation processors:
-    - `spring-boot-configuration-processor`: for application config file autocomplete
-    - `mapstruct-processor`: for mapstruct
-    - `lombok`: for lombok
+  - `spring-boot-configuration-processor`: for application config file autocomplete
+  - `mapstruct-processor`: for mapstruct
+  - `lombok`: for lombok
 - Javadoc plugin on `package` stage
-- Spring boot plugin to package executable jars.
+- Spring boot plugin to package executable jars. See [Spring Boot jar Executable](#spring-boot-jar-executable) for
+  detail.
 
-## Package jar executable
+## Usage
 
-``` bash
-mvn clean install spring-boot:repackage -Dmaven.test.skip=true
-```
+## Development
+
+See [Development](./development.md) for detail.
+
